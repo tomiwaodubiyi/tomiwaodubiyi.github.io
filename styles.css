@@ -134,6 +134,13 @@ footer .social-links a:hover {
         display: none;
         flex-direction: column;
         text-align: center;
+        background: #111;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        width: 100%;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .nav-links.active {
         display: flex;
