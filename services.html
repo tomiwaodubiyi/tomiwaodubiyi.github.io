@@ -6,7 +6,7 @@
     <meta name="description" content="Heet Security - Empowering cybersecurity awareness and ethical AI utilization.">
     <meta name="keywords" content="Cybersecurity, Training, Privacy, Ethical AI">
     <meta name="author" content="Heet Security">
-    <title>Heet Security</title>
+    <title>Heet Security - Services</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@
             </div>
             <div class="service">
                 <h2>Penetration Testing</h2>
-                <p>We perform security assessment from an adversarial point of view and report our findings along with remedial actions</p>
+                <p>We perform security assessment from an adversarial point of view and report our findings along with remedial actions.</p>
             </div>
         </div>
     </section>
@@ -62,11 +62,13 @@
         </div>
     </footer>
     <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
 
-        mobileMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            mobileMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
         });
     </script>
 </body>
