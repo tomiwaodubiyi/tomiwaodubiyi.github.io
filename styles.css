@@ -1,9 +1,20 @@
+/* Variables */
+:root {
+    --primary-color: #00bcd4;
+    --primary-color-dark: #0097a7;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --navbar-background: #111;
+    --navbar-text-color: #fff;
+    --font-family: 'Roboto', sans-serif;
+}
+
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
 }
 .container {
     width: 90%;
@@ -16,15 +27,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #111;
-    color: #fff;
+    background: var(--navbar-background);
+    color: var(--navbar-text-color);
     padding: 1rem 0;
 }
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    color: var(--navbar-text-color);
 }
 .navbar .nav-links {
     list-style: none;
@@ -35,19 +46,19 @@ body {
 }
 .navbar .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: var(--navbar-text-color);
     font-weight: bold;
     transition: color 0.3s;
 }
 .navbar .nav-links a:hover {
-    color: #00bcd4;
+    color: var(--primary-color);
 }
 .menu-toggle {
     display: none;
     cursor: pointer;
 }
 .menu-toggle i {
-    color: #fff;
+    color: var(--navbar-text-color);
     font-size: 1.5rem;
 }
 
@@ -72,7 +83,7 @@ body {
 .hero .btn {
     display: inline-block;
     padding: 0.7rem 2rem;
-    background: #00bcd4;
+    background: var(--primary-color);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -80,7 +91,7 @@ body {
     transition: background 0.3s;
 }
 .hero .btn:hover {
-    background: #0097a7;
+    background: var(--primary-color-dark);
 }
 
 /* Features Section */
@@ -95,20 +106,20 @@ body {
     flex: 1;
     min-width: 300px;
     padding: 2rem;
-    background: #f4f4f4;
+    background: var(--background-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .features .feature i {
     font-size: 2rem;
-    color: #00bcd4;
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 /* Footer */
 footer {
-    background: #111;
-    color: #fff;
+    background: var(--navbar-background);
+    color: var(--navbar-text-color);
     text-align: center;
     padding: 1rem 0;
 }
@@ -120,12 +131,12 @@ footer .social-links {
     margin-top: 1rem;
 }
 footer .social-links a {
-    color: #fff;
+    color: var(--navbar-text-color);
     font-size: 1.5rem;
     transition: color 0.3s;
 }
 footer .social-links a:hover {
-    color: #00bcd4;
+    color: var(--primary-color);
 }
 
 /* Responsive Design */
