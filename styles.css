@@ -142,12 +142,12 @@ footer .social-links a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: none; /* Hidden by default on mobile */
         flex-direction: column;
         text-align: center;
     }
     .nav-links.active {
-        display: flex;
+        display: flex; /* Display as flex when active */
     }
     .menu-toggle {
         display: block;
