@@ -14,21 +14,21 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html" class="logo">Heet Security</a>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="menu-toggle" id="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Heet Security</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
     <section class="services">
         <div class="container">
@@ -62,14 +62,14 @@
         </div>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const navLinks = document.querySelector('.nav-links');
+    document.addEventListener('DOMContentLoaded', () => {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
 
-            mobileMenu.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
+    });
     </script>
 </body>
 </html>
